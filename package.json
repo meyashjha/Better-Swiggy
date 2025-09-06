@@ -5,9 +5,9 @@
   "description": "Simple food No api",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
+    "build": "cross-env TEMP=\"D:/7. Projects/1.Swiggy/New/.tmp\" parcel build index.html --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "jest"
   },
   "author": "yash",
