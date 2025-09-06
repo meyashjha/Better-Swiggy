@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "cross-env TEMP=\"D:/7. Projects/1.Swiggy/New/.tmp\" parcel build index.html --public-url ./",
-    "predeploy": "npm run build",
+    "predeploy": "rm -rf dist .parcel-cache && npm run build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist",
     "test": "jest"
   },

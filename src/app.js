@@ -52,11 +52,11 @@ const approuter = createBrowserRouter([
             }
         ],
         errorElement: <Error/>
-    },
+    }
+],
     {
     basename: "/Better-Swiggy"   // 👈 important for GitHub Pages
-  }
-])
+  })
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={approuter}/>)
