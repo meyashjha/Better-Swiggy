@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+       <link rel="icon" href="https://cdn.dribbble.com/userupload/28176351/file/original-2f163c2fede027c929baa7b25f3e5d64.jpg?resize=1600x1200&vertical=center" type="image/x-icon">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem('darkMode');
+                    var isDark = saved !== null ? JSON.parse(saved) : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    if (isDark) document.documentElement.classList.add('dark');
+                } catch (e) {
+                    // ignore
+                }
+            })();
+        </script>
+</head>
+<body>
+    <div id="root">
+        <h1>Not Rendered</h1>
+
+    </div>
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
